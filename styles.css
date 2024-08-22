@@ -68,6 +68,34 @@ header h1 {
     color: #333;
 }
 
+.no-border {
+    border-bottom: none;
+    margin-bottom: 0; 
+    padding-bottom: 0;
+}
+
+.role {
+    font-size: 0.9em;
+    color: #00796b;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.role::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #b2dfdb;
+    position: absolute;
+    bottom: -10px;
+    left: 0;    
+}
+
+.role + p {
+    margin-top: 20px; /* 10px cho khoảng cách trước đó + 10px mới */
+}
+
 section {
     margin-bottom: 20px;
 }
@@ -107,6 +135,10 @@ footer {
 #teamates1 a {
     text-decoration: none;
     color: inherit;
+}
+
+#teamates1{
+    cursor: pointer;
 }
 
 /* Responsive Design */
