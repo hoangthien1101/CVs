@@ -7,6 +7,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById("teamates1").addEventListener("click", function() {
-    // Chuyển hướng tới pf.html khi nhấp vào li
     window.location.href = "pf.html";
 });
